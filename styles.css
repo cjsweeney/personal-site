@@ -1,5 +1,6 @@
 /* (.) is a class name, while # is for id */
 
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
 .container {
     display: flex;
 }
@@ -12,13 +13,14 @@
 body {
     background-color: #F5F5F5;
     color: #404040;
+    font-family: 'Nanum Myeongjo', serif;
 }
 
 .column {
     margin-left: auto;
     margin-right: auto;
     margin-top: 5em;
-    width: 26em
+    width: 24em;
 }
 
 div:not(:last-child) {
@@ -27,30 +29,34 @@ div:not(:last-child) {
 
 a:link {
     text-decoration: none;
-    color: #9E9E9E;
+    color: #0177BD;
 }
 
 a:visited {
     text-decoration: none;
-    color: #9E9E9E;
+    color: #0177BD;
 }
 
 a:hover {
     text-decoration: underline;
-    color: black;
+    color: #0177BD;
 }
 
 a:active {
     text-decoration: underline;
-    color: #9E9E9E;
+    color: #0177BD;
 }
 
 h1 {
-    font-family: serif;
     font-weight: normal;
+    font-family: 'Nanum Myeongjo', serif;
 }
 
 p {
-    font-family: serif;
+    font-family: 'Nanum Myeongjo', serif;
     line-height: 20pt;
+}
+
+.footer {
+    font-size: 0.7em;
 }
