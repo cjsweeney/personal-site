@@ -1,0 +1,56 @@
+/* (.) is a class name, while # is for id */
+
+.container {
+    display: flex;
+}
+
+.container>div {
+    flex 1;
+    /*grow*/
+}
+
+body {
+    background-color: #F5F5F5;
+    color: #404040;
+}
+
+.column {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5em;
+    width: 25em
+}
+
+div:not(:last-child) {
+    margin-right: 30px;
+}
+
+a:link {
+    text-decoration: none;
+    color: #9E9E9E;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #9E9E9E;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+a:active {
+    text-decoration: underline;
+    color: #9E9E9E;
+}
+
+h1 {
+    font-family: serif;
+    font-weight: normal;
+}
+
+p {
+    font-family: serif;
+    line-height: 20pt;
+}
