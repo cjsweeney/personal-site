@@ -10,10 +10,21 @@
             font-family: 'Nanum Myeongjo', serif;
             line-height: 1.6;
             color: #333;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
+            margin: 0;
             background-color: #f0f4f8;
+            display: flex;
+            height: 100vh;
+        }
+        .image-column {
+            flex: 1;
+            background: url('slicedpic.png') no-repeat center center;
+            background-size: cover;
+            height: 100%;
+        }
+        .text-column {
+            flex: 2;
+            padding: 20px;
+            overflow-y: auto;
         }
         h1 {
             color: #2c3e50;
@@ -59,47 +70,50 @@
     </script>
 </head>
 <body>
-    <header>
-        <h1>Connor Sweeney</h1>
-    </header>
-    
-    <nav class="social-links">
-        <a href="https://www.instagram.com/sweeneyconnor/">Instagram↗</a>
-        <a href="https://www.twitter.com/_ConnorSweeney">Twitter↗</a>
-        <a href="https://www.linkedin.com/in/connorjsweeney">LinkedIn↗</a>
-    </nav>
-    
-    <main>
-        <section class="section">
-            <p>Previously chief of staff to <a href="https://twitter.com/lucy_guo/status/1572660635187531777?s=20&t=UHhW1GuohBblbSBuRGl-4g">Lucy Guo</a>. Employee #2 at <a href="https://www.passes.com">Passes</a>.</p>
-            <p>I grew up in Delaware, went to <a href="http://web.mit.edu/voigtlab/">MIT</a>, and cofounded an agricultural synthetic biology startup called <a href="https://agfundernews.com/robigo-raises-1-2m-pre-seed-funding-to-make-molecular-vigilante-biopesticides">Robigo</a>.</p>
-        </section>
+    <div class="image-column"></div>
+    <div class="text-column">
+        <header>
+            <h1>Connor Sweeney</h1>
+        </header>
+        
+        <nav class="social-links">
+            <a href="https://www.instagram.com/sweeneyconnor/">Instagram↗</a>
+            <a href="https://www.twitter.com/_ConnorSweeney">Twitter↗</a>
+            <a href="https://www.linkedin.com/in/connorjsweeney">LinkedIn↗</a>
+        </nav>
+        
+        <main>
+            <section class="section">
+                <p>Previously chief of staff to <a href="https://twitter.com/lucy_guo/status/1572660635187531777?s=20&t=UHhW1GuohBblbSBuRGl-4g">Lucy Guo</a>. Employee #2 at <a href="https://www.passes.com">Passes</a>.</p>
+                <p>I grew up in Delaware, went to <a href="http://web.mit.edu/voigtlab/">MIT</a>, and cofounded an agricultural synthetic biology startup called <a href="https://agfundernews.com/robigo-raises-1-2m-pre-seed-funding-to-make-molecular-vigilante-biopesticides">Robigo</a>.</p>
+            </section>
 
-        <section class="section">
-            <h2>Scientific articles</h2>
-            <ul>
-                <li>How to deploy engineered microbes into the environment & consumer settings <a href="https://www.authorea.com/users/795897/articles/1116574-engineering-bacteria-for-environmental-release-regulatory-challenges-and-design-strategies">(2024)</a></li>
-                <li>Plants can be engineered with nanotubes <a href="https://www.nature.com/articles/s41565-019-0375-4">(2019)</a></li>
-                <li>Plants warn neighbors when scared <a href="https://www.frontiersin.org/articles/10.3389/fpls.2017.00595/full">(2017)</a></li>
-            </ul>
-        </section>
+            <section class="section">
+                <h2>Scientific articles</h2>
+                <ul>
+                    <li>How to deploy engineered microbes into the environment & consumer settings <a href="https://www.authorea.com/users/795897/articles/1116574-engineering-bacteria-for-environmental-release-regulatory-challenges-and-design-strategies">(2024)</a></li>
+                    <li>Plants can be engineered with nanotubes <a href="https://www.nature.com/articles/s41565-019-0375-4">(2019)</a></li>
+                    <li>Plants warn neighbors when scared <a href="https://www.frontiersin.org/articles/10.3389/fpls.2017.00595/full">(2017)</a></li>
+                </ul>
+            </section>
 
-        <section class="section">
-            <h2>Investments</h2>
-            <ul>
-                <li>Autonomous underground logistics <a href='https://www.pipedreamlabs.co/'>(2024)</a></li>
-                <li>On-demand rain <a href="https://www.makerain.com/">(2023)</a></li>
-                <li>American-made chips <a href="https://atomicsemi.com/">(2023)</a></li>
-                <li>Nitrogen-fixing microbes so we don't need Russian ammonia <a href="https://www.switchbioworks.com">(2022)</a></li>
-                <li>Plant-based cheese that actually tastes good <a href="https://www.plonts.com/">(2022)</a></li>
-                <li>Heart hormone coaching <a href="https://www.endless.health">(2022)</a></li>
-                <li>A platform for Type A people who feel stuck or lost in life <a href="https://www.resahealth.com/">(2022)</a></li>
-            </ul>
-        </section>
-    </main>
-    
-    <footer class="footer">
-        <p>sweeneyconnorj at gmail dot com</p>
-    </footer>
+            <section class="section">
+                <h2>Investments</h2>
+                <ul>
+                    <li>Autonomous underground logistics <a href='https://www.pipedreamlabs.co/'>(2024)</a></li>
+                    <li>On-demand rain <a href="https://www.makerain.com/">(2023)</a></li>
+                    <li>American-made chips <a href="https://atomicsemi.com/">(2023)</a></li>
+                    <li>Nitrogen-fixing microbes so we don't need Russian ammonia <a href="https://www.switchbioworks.com">(2022)</a></li>
+                    <li>Plant-based cheese that actually tastes good <a href="https://www.plonts.com/">(2022)</a></li>
+                    <li>Heart hormone coaching <a href="https://www.endless.health">(2022)</a></li>
+                    <li>A platform for Type A people who feel stuck or lost in life <a href="https://www.resahealth.com/">(2022)</a></li>
+                </ul>
+            </section>
+        </main>
+        
+        <footer class="footer">
+            <p>sweeneyconnorj at gmail dot com</p>
+        </footer>
+    </div>
 </body>
 </html>
