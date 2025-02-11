@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Connor Sweeney</title>
+    <!-- Preload critical image -->
+    <link rel="preload" href="slicedpic.webp" as="image">
     <link rel="icon" type="image/png" href="/icons8-crocodile-64.png">
     <style>
         body {
@@ -17,9 +19,15 @@
         }
         .image-column {
             flex: 1;
-            background: url('slicedpic.png') no-repeat center center;
+            background: url('slicedpic.webp') no-repeat center center;
             background-size: cover;
             height: 100%;
+        }
+        @media screen and (min-width: 0\0) {
+            /* Fallback for browsers that don't support WebP */
+            .image-column {
+                background-image: url('slicedpic.png');
+            }
         }
         .text-column {
             flex: 2;
@@ -57,16 +65,22 @@
             font-size: 0.9em;
         }
     </style>
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+    <!-- Load font with display swap to prevent blocking -->
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <!-- Fallback in case JS is disabled -->
+    <noscript>
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+    </noscript>
 
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=T22EXVNX5D"></script>
+    <!-- Defer non-critical Google Analytics -->
+    <script defer src="https://www.googletagmanager.com/gtag/js?id=G-T22EXVNX5D"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-T22EXVNX5D');
+        window.addEventListener('load', function() {
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-T22EXVNX5D');
+        });
     </script>
 </head>
 <body>
@@ -77,21 +91,21 @@
         </header>
 
         <nav class="social-links">
-            <a href="https://www.instagram.com/sweeneyconnor/">Instagram↗</a>
-            <a href="https://www.twitter.com/_ConnorSweeney">Twitter↗</a>
-            <a href="https://www.linkedin.com/in/connorjsweeney">LinkedIn↗</a>
+            <a href="https://www.instagram.com/sweeneyconnor/">Instagram</a>
+            <a href="https://www.twitter.com/_ConnorSweeney">Twitter</a>
+            <a href="https://www.linkedin.com/in/connorjsweeney">LinkedIn</a>
         </nav>
 
         <main>
             <section class="section">
-                <p>Previously chief of staff to <a href="https://twitter.com/lucy_guo/status/1572660635187531777?s=20&t=UHhW1GuohBblbSBuRGl-4g">Lucy Guo</a>. Employee #2 at <a href="https://www.passes.com">Passes</a>, where I joined on Day 1 and left at a ~$50m GMV runrate.</p>
+                <p>Previously chief of staff to <a href="https://twitter.com/lucy_guo/status/1572660635187531777?s=20&t=UHhW1GuohBblbSBuRGl-4g">Lucy Guo</a>. Employee #2 at <a href="https://blog.passes.com/passes-announces-40m-series-a/">Passes</a>, where I joined on Day 1 and left at a ~$50m GMV runrate.</p>
                 <p>I grew up in Delaware, went to <a href="http://web.mit.edu/voigtlab/">MIT</a>, and cofounded an agricultural synthetic biology startup called <a href="https://agfundernews.com/robigo-raises-1-2m-pre-seed-funding-to-make-molecular-vigilante-biopesticides">Robigo</a>. They're currently doing field trials for bioengineered pesticides.</p>
             </section>
 
             <section class="section">
                 <h2>Articles</h2>
                 <ul>
-                    <li>How to deploy engineered microbes into the environment & consumer settings <a href="https://www.nature.com/articles/s41564-024-01918-0">(Nature Microbiology, 2025 )</a></li>
+                    <li>How to deploy engineered microbes into the environment & consumer settings <a href="https://www.nature.com/articles/s41564-024-01918-0">(Nature Microbiology, 2025)</a></li>
                     <li>Plants can be engineered with nanotubes <a href="https://www.nature.com/articles/s41565-019-0375-4">(Nature Nanotechnology, 2019)</a></li>
                     <li>Plants warn neighbors when scared <a href="https://www.frontiersin.org/articles/10.3389/fpls.2017.00595/full">(Frontiers in Plant Science, 2017)</a></li>
                 </ul>
