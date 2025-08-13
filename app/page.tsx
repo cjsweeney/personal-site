@@ -33,7 +33,17 @@ export default function Home() {
 
       <hr className="section-break" />
 
-      <h2>Articles</h2>
+      <h2>Writing</h2>
+      <div className="investment-list">
+        <div className="investment-item">
+          <a href="https://connorsweeney.substack.com/p/a-shortcut-to-winning">
+            A shortcut to winning: What Lucy Guo taught me about stacking the odds in your favor
+          </a>
+          <span className="investment-description">2025</span>
+        </div>
+      </div>
+
+      <h2>Science Articles</h2>
       <div className="investment-list">
         <div className="investment-item">
           <a href="https://www.nature.com/articles/s41564-024-01918-0">
