@@ -5,6 +5,9 @@ import Script from 'next/script'
 export const metadata: Metadata = {
   title: 'Connor Sweeney',
   description: 'Personal website of Connor Sweeney',
+  icons: {
+    icon: '/favicon.png',
+  },
 }
 
 export default function RootLayout({
