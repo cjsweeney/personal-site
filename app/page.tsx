@@ -67,6 +67,10 @@ export default function Home() {
 
       <h2 className="smaller-heading">Investments</h2>
       <div className="investment-list">
+      <div className="investment-item">
+          <a href="https://www.withmetis.ai//">Metis</a>
+          <span className="investment-description">Agent infrastructure</span>
+        </div>
         <div className="investment-item">
           <a href="https://shipodyssey.com/">Odyssey</a>
           <span className="investment-description">Flexport for healthcare</span>
