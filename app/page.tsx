@@ -73,7 +73,7 @@ export default function Home() {
           </span>
         </div>
         <div className="investment-item">
-          <a href="">Proactive Labs</a>
+          <p>Proactive Labs</p>
           <span className="investment-description">AI Chief of Staff</span>
         </div>
       <div className="investment-item">
