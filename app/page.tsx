@@ -68,7 +68,16 @@ export default function Home() {
       <h2 className="smaller-heading">Investments</h2>
       <div className="investment-list">
       <div className="investment-item">
-          <a href="https://www.withmetis.ai//">Metis</a>
+          <a href="https://www.collectpure.com/">Pure</a>
+          <span className="investment-description">Marketplace for Rare Coins & Precious Metals
+          </span>
+        </div>
+        <div className="investment-item">
+          <a href="">Proactive Labs</a>
+          <span className="investment-description">AI Chief of Staff</span>
+        </div>
+      <div className="investment-item">
+          <a href="https://www.withmetis.ai/">Metis</a>
           <span className="investment-description">Agent infrastructure</span>
         </div>
         <div className="investment-item">
@@ -104,8 +113,8 @@ export default function Home() {
           <span className="investment-description">Nitrogen-fixing microbes</span>
         </div>
         <div className="investment-item">
-          <a href="https://www.plonts.com/">Tezza</a>
-          <span className="investment-description">Plant-based cheese and yogurt</span>
+          <a href="https://www.tezzafoods.com/">Tezza</a>
+          <span className="investment-description">High-protein, non-dairy yogurt and cheese</span>
         </div>
         <div className="investment-item">
           <a href="https://www.endless.health">Endless Health</a>
