@@ -21,7 +21,6 @@ export default function Home() {
           </a>
         </div>
       </div>
-
       <p>
         Building <a href= "https://www.callbaba.com" className="bio-link">Baba</a>.
        <p> 
