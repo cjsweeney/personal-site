@@ -24,7 +24,9 @@ export default function Home() {
 
       <p>
         Building <a href= "https://www.callbaba.com" className="bio-link">Baba</a>.
+       <p> 
         <br />
+        <p>
         Previously chief of staff to <a href="https://twitter.com/lucy_guo/status/1572660635187531777?s=20&t=UHhW1GuohBblbSBuRGl-4g" className="bio-link">Lucy Guo</a>. 
         Employee #2 at <a href="https://blog.passes.com/passes-announces-40m-series-a/" className="bio-link">Passes</a>.
       </p>
