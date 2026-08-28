@@ -22,7 +22,7 @@ export default function Home() {
         </div>
       </div>
       <p>
-        Building <a href="https://www.callbaba.com" className="bio-link">Baba</a> - underwriting risk and delivering care to folks with Medicare.
+        Building <a href="https://www.callbaba.com" className="bio-link">Baba</a> - healthcare for folks with Medicare.
       </p>
       <br />
       <p>
