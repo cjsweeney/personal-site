@@ -97,6 +97,13 @@ a:hover {
   font-size: 1rem;
 }
 
+.spv-footnote {
+  text-align: right;
+  color: #888;
+  font-size: 0.875rem;
+  margin: 0;
+}
+
 .image-column {
   flex: 1;
   background: url('/slicedpic.webp') no-repeat center center;
